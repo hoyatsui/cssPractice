@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+
+  list-style: none;
+}
+
+body {
+  font: 14px /1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url(../images/2.jpg) center center;
+  background-size: cover;
+  min-height: 100vh;
+  backdrop-filter: blur(0.5px);
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+#page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.search {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-tabs {
+  display: flex;
+}
+
+.search-tab {
+  padding: 2px 4px;
+  margin-right: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.search-bar {
+  margin-top: 20px;
+  position: relative;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.search-bar>input {
+
+  max-width: 740px;
+  width: 400px;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  outline: none;
+  border: none;
+  padding: 0 24px 0 10px;
+  color: #666;
+  transition: all .3s;
+}
+
+.search-bar>input:focus {
+  max-width: 740px;
+  width: calc(100vw - 60px);
+}
+
+.search-bar>input::placeholder {
+  color: #999;
+}
+
+.icon-search {
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+.websites .list h2 {
+  color: #fff;
+  font-size: 32px;
+}
+
+.websites .links {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.websites .tag:nth-child(4n+1) {
+
+  background-color: #ffbdd0;
+
+}
+
+.websites .tag:nth-child(4n+2) {
+  background-color: #c2ffc8;
+}
+
+.websites .tag:nth-child(4n+3) {
+  background-color: #bde1ff;
+}
+
+.websites .tag:nth-child(4n) {
+  background-color: #f1ffbd;
+}
+
+.websites .tag {
+  padding: 4px 10px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.websites .categories {
+  margin-top: 60px;
+}
